@@ -1,7 +1,13 @@
 package main
 
-import "github.com/lucassdezembro/pc_monitoring/pc_monitoring"
+import (
+	"fmt"
+
+	"github.com/lucassdezembro/pc_monitoring/pc_monitoring"
+)
 
 func main() {
-	pc_monitoring.NewCpuMonitor()
+	pcMonitor := pc_monitoring.NewCpuMonitor()
+
+	fmt.Print(pcMonitor.GetCpuUsage())
 }

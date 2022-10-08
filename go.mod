@@ -1,4 +1,4 @@
-module personal/pc_monitoring
+module github.com/lucassdezembro/pc_monitoring
 
 go 1.19
 
